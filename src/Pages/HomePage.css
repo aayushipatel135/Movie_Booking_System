@@ -1,0 +1,46 @@
+.carousel-wrapper {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .fullscreen-scroll {
+    display: flex;
+    overflow-x: hidden;
+    height: calc(100vh - 120px);
+    scroll-behavior: smooth;
+  }
+  
+  .fullscreen-scroll > * {
+    flex-shrink: 0;
+    width: 100vw;
+    height: 100%;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .arrow-button.left {
+    left: 10px;
+  }
+  
+  .arrow-button.right {
+    right: 10px;
+  }
+  
+  .arrow-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  
